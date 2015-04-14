@@ -51,7 +51,7 @@ var AllFieldsForm = forms.Form.extend({
 , ImageField: forms.ImageField({required: false, helpText: 'Optional'})
 , ImageFieldWithIniitial: forms.ImageField({required: false, initial: new FakeFile('Fake File', 'fake.file')   })
 , URLField: forms.URLField({label: 'URL field'})
-, BooleanField: forms.BooleanField()
+, BooleanField: forms.BooleanField({ required: false })
 , NullBooleanField: forms.NullBooleanField()
 , ChoiceField: forms.ChoiceField({choices: choicesWithEmpty})
 , ChoiceFieldWithCategories: forms.ChoiceField({choices: choicesWithCategories})
